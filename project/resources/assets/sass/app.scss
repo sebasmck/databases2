@@ -1,6 +1,9 @@
-
+$link: $oc-blue-5;
+@import './node_modules/bulma/bulma.sass';
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import "node_modules/bulma/bulma";
+@import "node_modules/font-awesome/scss/font-awesome";
 
 // Variables
 @import "variables";
