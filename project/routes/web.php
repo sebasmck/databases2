@@ -16,3 +16,12 @@ Route::get('/starthere', 'FlowController@index')->name('starthere');
 
 Route::get('/contact', 'HomeController@contact')->name('contact');
 
+// Route::get('/starthere/{$id_city}', 'FlowController@show')->name('universities');
+
+Route::Resource('flow', 'FlowController');
+
+Route::Resource('flow2', 'Flow2Controller');
+
+Route::Resource('flow3', 'Flow3Controller');
+
+

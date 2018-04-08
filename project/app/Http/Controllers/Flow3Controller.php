@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\City;
-
-class FlowController extends Controller
+use App\Faculty;
+class Flow3Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,7 @@ class FlowController extends Controller
      */
     public function index()
     {
-        $cities = City::all();
-
-        return view('flow.view_all_cities')->with('cities', $cities);
+        //
     }
 
     /**
@@ -37,7 +34,7 @@ class FlowController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -46,13 +43,13 @@ class FlowController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id_city)
+    public function show($id_faculty)
     {
-        $universities = City::find($id_city)->universities;
+        $programs = Faculty::find($id_faculty)->programs;
 
-        $city = City::find($id_city);
+        $faculty = Faculty::find($id_faculty);
 
-        return view('flow.view_universities')->with('universities', $universities)->with('city', $city);
+        return view ('flow.view_programs')->with('programs', $programs)->with('faculty', $faculty);
     }
 
     /**

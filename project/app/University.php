@@ -13,4 +13,12 @@ class University extends Model
     // protected $fillable = [];
 
     public $timestamps = false;
+
+    public function faculties(){
+
+        return $this->hasMany('App\Faculty', 'id_university', 'id_university');
+
+    }
+
+
 }

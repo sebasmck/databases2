@@ -67,6 +67,55 @@
                   </section>
 
                   <section class="section">
+                        <div class="columns is-mobile">
+                                <div class="column is-half is-offset-one-quarter">
+                                        <div class="field">
+                                                <label class="label">Nombre</label>
+                                                <div class="control">
+                                                  <input class="input" type="text" required>
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="field">
+                                                <label class="label">Email</label>
+                                                <div class="control has-icons-left has-icons-right">
+                                                  <input class="input" type="email" required>
+                                                  <span class="icon is-small is-left">
+                                                    <i class="fas fa-envelope"></i>
+                                                  </span>
+                                                  <span class="icon is-small is-right">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                  </span>
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="field">
+                                                <label class="label">Mensaje</label>
+                                                <div class="control">
+                                                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="field">
+                                                <div class="control">
+                                                  <label class="checkbox">
+                                                    <input type="checkbox">
+                                                    Estoy de acuerdo con los  <a href="#">terminos y condiciones</a>
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="field is-grouped">
+                                                <div class="control">
+                                                  <button class="button is-link">Submit</button>
+                                                </div>
+                                                <div class="control">
+                                                  <button class="button is-text">Cancel</button>
+                                                </div>
+                                              </div>
+                                </div>
+                        </div>
+
                     
                   </section>
 

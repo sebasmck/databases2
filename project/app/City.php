@@ -15,5 +15,11 @@ class City extends Model
 
     public $timestamps = false;
 
+    public function universities(){
+
+        return $this->hasMany('App\University', 'id_city', 'id_city');
+
+    }
+
 
 }

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Programas</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -34,7 +34,7 @@
                           <div class="column is-narrow">
                             <div id="carboncontainer">
                   
-                  </div>
+                            </div>
                   
                           </div>
                         </div>
@@ -69,20 +69,20 @@
 
                   <section class="section">
                     <div class="container">
-                      <h1 class="title"><b> Ciudades </b></h1>                  
-                      
-                      <table id="cities" class="display">
+                      <h1 class="title"><b> {{$faculty->faculty_name}} </b></h1>                  
+                      <hr style="margin-bottom: 0;">
+                      <table id="programs" class="display">
                             <thead>
                                 <tr>
-                                    <th>Ciudad</th>
+                                    <th>Programas</th>
                                     <th>Acción</th>
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach($cities as $city)
+                            @foreach($programs as $program)
                                 <tr>
-                                    <td>{{$city->city_name}}</td>
-                                <td><a class="button is-danger" href={{route('flow.show', $city->id_city)}}""> Ver Mas </a></td>
+                                    <td>{{$program->program_name}}</td>
+                                    <td><a class="button is-danger" href={{route('flow3.show', $faculty->id_faculty)}}""> Ver Mas </a></td>
                                 </tr>
                             @endforeach
                             </tbody>
@@ -101,7 +101,7 @@
     <script>
         
         $(document).ready( function () {
-            $('#cities').DataTable();
+            $('#programs').DataTable();
         } );
         
     </script>

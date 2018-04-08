@@ -69,20 +69,20 @@
 
                   <section class="section">
                     <div class="container">
-                      <h1 class="title"><b> Ciudades </b></h1>                  
-                      
-                      <table id="cities" class="display">
+                      <h1 class="title"><b> {{$university->name}} </b></h1>                  
+                      <hr style="margin-bottom: 0;">
+                      <table id="faculties" class="display">
                             <thead>
                                 <tr>
-                                    <th>Ciudad</th>
+                                    <th>Facultad</th>
                                     <th>Acción</th>
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach($cities as $city)
+                            @foreach($faculties as $faculty)
                                 <tr>
-                                    <td>{{$city->city_name}}</td>
-                                <td><a class="button is-danger" href={{route('flow.show', $city->id_city)}}""> Ver Mas </a></td>
+                                    <td>{{$faculty->faculty_name}}</td>
+                                    <td><a class="button is-danger" href={{route('flow3.show', $faculty->id_faculty)}}""> Ver Mas </a></td>
                                 </tr>
                             @endforeach
                             </tbody>
@@ -101,7 +101,7 @@
     <script>
         
         $(document).ready( function () {
-            $('#cities').DataTable();
+            $('#faculties').DataTable();
         } );
         
     </script>
