@@ -25,16 +25,16 @@
                         <div class="columns is-vcentered">
                           <div class="column">
                             <p class="title">
-                              Bienvenido
+                                Top 10 de la semana
                             </p>
                             <p class="subtitle">
-                              Tu mismo califica a tu profesor!
+                                Felicitaciones profes!
                             </p>
                           </div>
                           <div class="column is-narrow">
                             <div id="carboncontainer">
                   
-                  </div>
+                            </div>
                   
                           </div>
                         </div>
@@ -45,20 +45,20 @@
                       <div class="container">
                         <nav class="tabs is-boxed">
                           <ul>
-                            <li class="is-active">
+                            <li>
                               <a href="/">Como Funciona?</a>
                             </li>
                             <li>
                               <a href="/trouble">Problemas?</a>
                             </li>
-                            <li>
+                            <li class="is-active">
                                 <a href="/top10">Top 10 !</a>
                               </li>
                               <li>
                                 <a href="/starthere">Comienza Aqui!</a>
                               </li>
                               <li>
-                                <a href="/contacto">Contactanos</a>
+                                <a href="/contact">Contactanos</a>
                               </li>
                            
                           </ul>
@@ -68,43 +68,7 @@
                   </section>
 
                   <section class="section">
-                    <div class="container">
-                      <h1 class="title"><b> Simple! </b></h1>
-                      <hr>
-                  
-                      <div class="content">
-                        <ol>
-                          <li>
-                            Busca tu ciudad
-                          </li>
-                          <li>
-                            Escoge tu Universidad
-                          </li>
-                          <li>
-                            Elige tu carrera
-                          </li>
-                          <li>
-                            Busca tu profe y cuentanos que te parece!
-                          </li>
-                        </ol>
-                      </div>
-
-                      <hr>
-                  
-                      <div class="message is-info">
-                        <div class="message-header">
-                          Nuestra Idea
-                        </div>
-                        <div class="message-body">
-                              <li>Mejorar la calidad de nuestra educación</li>                              
-                              <li>Construir una comunidad informativa</li>
-                              <li>Facilitar la inscripcion de materias mensual!</li>
-                        </div>
-                      </div>
-                  
-                      <hr style="margin-bottom: 0;">  
-                  
-                    </div>
+                    
                   </section>
 
     </body>

@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{asset('css/bulma.css')}}">
         <!-- Styles -->
-
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
 
         
     </head>
@@ -25,10 +25,10 @@
                         <div class="columns is-vcentered">
                           <div class="column">
                             <p class="title">
-                              Bienvenido
+                              Comienza Aqui!
                             </p>
                             <p class="subtitle">
-                              Tu mismo califica a tu profesor!
+                              Empieza seleccionando tu ciudad
                             </p>
                           </div>
                           <div class="column is-narrow">
@@ -45,7 +45,7 @@
                       <div class="container">
                         <nav class="tabs is-boxed">
                           <ul>
-                            <li class="is-active">
+                            <li>
                               <a href="/">Como Funciona?</a>
                             </li>
                             <li>
@@ -54,11 +54,11 @@
                             <li>
                                 <a href="/top10">Top 10 !</a>
                               </li>
-                              <li>
+                              <li class="is-active">
                                 <a href="/starthere">Comienza Aqui!</a>
                               </li>
                               <li>
-                                <a href="/contacto">Contactanos</a>
+                                <a href="/contact">Contactanos</a>
                               </li>
                            
                           </ul>
@@ -69,43 +69,43 @@
 
                   <section class="section">
                     <div class="container">
-                      <h1 class="title"><b> Simple! </b></h1>
-                      <hr>
-                  
-                      <div class="content">
-                        <ol>
-                          <li>
-                            Busca tu ciudad
-                          </li>
-                          <li>
-                            Escoge tu Universidad
-                          </li>
-                          <li>
-                            Elige tu carrera
-                          </li>
-                          <li>
-                            Busca tu profe y cuentanos que te parece!
-                          </li>
-                        </ol>
-                      </div>
-
-                      <hr>
-                  
-                      <div class="message is-info">
-                        <div class="message-header">
-                          Nuestra Idea
-                        </div>
-                        <div class="message-body">
-                              <li>Mejorar la calidad de nuestra educación</li>                              
-                              <li>Construir una comunidad informativa</li>
-                              <li>Facilitar la inscripcion de materias mensual!</li>
-                        </div>
-                      </div>
-                  
+                      <h1 class="title"><b> Ciudades </b></h1>                  
                       <hr style="margin-bottom: 0;">  
-                  
+
+                      <table id="cities" class="display">
+                            <thead>
+                                <tr>
+                                    <th>Ciudad</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($cities as $city)
+                                <tr>
+                                    <td>{{$city->city_name}}</td>
+                                    <td>boton</td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                            
+                        </table>
+
+
                     </div>
                   </section>
-
     </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    
+    <script>
+        
+        $(document).ready( function () {
+            $('#cities').DataTable();
+        } );
+        
+    </script>
+
+
 </html>

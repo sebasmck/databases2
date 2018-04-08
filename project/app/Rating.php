@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rating extends Model
 {
-    protected $table = '';
+    protected $table = 'rating';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id_rating';
 
-    protected $fillable = [];
+    // protected $fillable = [];
 
     public $timestamps = false;
 }

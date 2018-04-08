@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Teacher extends Model
 {
-    protected $table = '';
+    protected $table = 'teacher';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id_teacher';
 
-    protected $fillable = [];
+    // protected $fillable = [];
 
     public $timestamps = false;
 }

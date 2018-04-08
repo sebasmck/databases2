@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class City extends Model
 {
     
-    protected $table = '';
+    protected $table = 'city';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id_city';
 
-    protected $fillable = [];
+    // protected $fillable = [];
 
     public $timestamps = false;
 

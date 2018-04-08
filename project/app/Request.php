@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Request extends Model
 {
-    protected $table = '';
+    protected $table = 'request';
 
-    protected $primaryKey = '';
+    protected $primaryKey = 'id_request';
 
-    protected $fillable = [];
+    // protected $fillable = [];
 
     public $timestamps = false;
 }
