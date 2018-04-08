@@ -24,4 +24,10 @@ Route::Resource('flow2', 'Flow2Controller');
 
 Route::Resource('flow3', 'Flow3Controller');
 
+Route::Resource('flow4', 'Flow4Controller');
+
+Route::Resource('flow5', 'Flow5Controller');
+
+
+
 

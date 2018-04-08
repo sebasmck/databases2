@@ -15,6 +15,6 @@ class Program extends Model
     public $timestamps = false;
 
     public function courses(){
-        return $this->hasMany('App\Course');
+        return $this->hasMany('App\Course', 'id_program', 'id_program');
     }
 }

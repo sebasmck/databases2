@@ -69,7 +69,7 @@
 
                   <section class="section">
                     <div class="container">
-                      <h1 class="title"><b> {{$faculty->faculty_name}} </b></h1>                  
+                      <h1 class="title"><b> {{$program->program_name}} </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="programs" class="display">
                             <thead>
@@ -79,10 +79,10 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach($programs as $program)
+                            @foreach($courses as $course)
                                 <tr>
-                                    <td>{{$program->program_name}}</td>
-                                    <td><a class="button is-danger" href={{route('flow5.show', $program->id_program)}}""> Ver Mas </a></td>
+                                    <td>{{$course->course_name}}</td>
+                                    <td><a class="button is-danger" href={{route('flow5.show', $course->id_course)}}""> Ver Mas </a></td>
                                 </tr>
                             @endforeach
                             </tbody>

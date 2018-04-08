@@ -13,4 +13,13 @@ class Course extends Model
     // protected $fillable = [];
 
     public $timestamps = false;
+
+
+    public function teachers(){
+
+        return $this->hasMany('App\Teacher', 'id_course', 'id_course');
+
+    }
+
+
 }

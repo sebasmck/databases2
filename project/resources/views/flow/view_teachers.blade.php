@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Programas</title>
+        <title>Profesores</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -60,7 +60,6 @@
                               <li>
                                 <a href="/contact">Contactanos</a>
                               </li>
-                           
                           </ul>
                         </nav></div>
                       </div>
@@ -69,20 +68,22 @@
 
                   <section class="section">
                     <div class="container">
-                      <h1 class="title"><b> {{$faculty->faculty_name}} </b></h1>                  
+                      <h1 class="title"><b> {{$course->course_name}} </b></h1>                  
                       <hr style="margin-bottom: 0;">
                       <table id="programs" class="display">
                             <thead>
                                 <tr>
-                                    <th>Programas</th>
-                                    <th>Acción</th>
+                                    <th>Profesor</th>
+                                    <th>calificación actual</th>
+                                    <th>Calificar</th>
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach($programs as $program)
+                            @foreach($teachers as $teacher)
                                 <tr>
-                                    <td>{{$program->program_name}}</td>
-                                    <td><a class="button is-danger" href={{route('flow5.show', $program->id_program)}}""> Ver Mas </a></td>
+                                    <td>{{$teacher->name}}</td>
+                                    <td>relacion</td>
+                                    <td>button</td>
                                 </tr>
                             @endforeach
                             </tbody>
