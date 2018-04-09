@@ -83,7 +83,7 @@
                                 <tr>
                                     <td>{{$teacher->name}}</td>
                                     <td>relacion</td>
-                                    <td>button</td>
+                                    <td><a class="button is-danger" href={{route('ratings.show', $teacher->id_teacher)}}""> Ver Mas </a></td>
                                 </tr>
                             @endforeach
                             </tbody>

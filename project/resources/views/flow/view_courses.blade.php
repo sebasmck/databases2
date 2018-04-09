@@ -74,7 +74,7 @@
                       <table id="programs" class="display">
                             <thead>
                                 <tr>
-                                    <th>Programas</th>
+                                    <th>Curso</th>
                                     <th>Acción</th>
                                 </tr>
                             </thead>
@@ -82,7 +82,7 @@
                             @foreach($courses as $course)
                                 <tr>
                                     <td>{{$course->course_name}}</td>
-                                    <td><a class="button is-danger" href={{route('flow5.show', $course->id_course)}}""> Ver Mas </a></td>
+                                    <td><a class="button is-danger" href={{route('flow6.show', $course->id_course)}}""> Ver Mas </a></td>
                                 </tr>
                             @endforeach
                             </tbody>

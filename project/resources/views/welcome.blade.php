@@ -33,8 +33,9 @@
                           </div>
                           <div class="column is-narrow">
                             <div id="carboncontainer">
-                  
-                  </div>
+                                <marquee >  Creado por: Santi, and sebas!  </marquee> <br>
+                                <marquee behavior="down" direction="right"> Dirijido por Dr. Germán Vargas</marquee>
+                            </div>  
                   
                           </div>
                         </div>

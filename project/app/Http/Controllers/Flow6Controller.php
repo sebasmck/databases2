@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Program;
 
+use App\Course;
 
-
-class Flow5Controller extends Controller
+class Flow6Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -46,13 +45,13 @@ class Flow5Controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id_program)
+    public function show($id_course)
     {
-        $courses = Program::find($id_program)->courses;
+        $teachers = Course::find($id_course)->teachers;
 
-        $program = Program::find($id_program);
+        $course = Course::find($id_course);
 
-        return view('flow.view_courses')->with('courses', $courses)->with('program', $program);
+        return view ('flow.view_teachers')->with('teachers', $teachers)->with('course', $course);
     }
 
     /**

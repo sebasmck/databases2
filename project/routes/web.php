@@ -28,6 +28,10 @@ Route::Resource('flow4', 'Flow4Controller');
 
 Route::Resource('flow5', 'Flow5Controller');
 
+Route::Resource('flow6', 'Flow6Controller');
+
+Route::Resource('ratings', 'RatingsController');
+
 
 
 
