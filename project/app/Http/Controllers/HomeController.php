@@ -44,5 +44,10 @@ class HomeController extends Controller
 
     }
 
+    public function add_Teacher()
+    {
+        return view('add_Teacher');
+    }
+
 
 }
